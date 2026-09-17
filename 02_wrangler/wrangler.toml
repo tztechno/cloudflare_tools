@@ -1,0 +1,14 @@
+name = "takaichi-cabinet-poll"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+# Bind a KV namespace named POLL_KV.
+# Create it with:  wrangler kv namespace create POLL_KV
+# then paste the returned id below.
+[[kv_namespaces]]
+binding = "POLL_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Optional: also create a preview namespace for local dev with `wrangler dev`
+# wrangler kv namespace create POLL_KV --preview
+# preview_id = "REPLACE_WITH_YOUR_PREVIEW_KV_NAMESPACE_ID"
